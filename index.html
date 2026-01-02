@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>경제학 기반 데이터 분석가 포트폴리오</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide-react/0.263.1/lucide-react.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Pretendard', sans-serif; scroll-behavior: smooth; }
+        .gradient-bg { background: linear-gradient(135deg, #1a365d 0%, #2b6cb0 100%); }
+        .card-hover:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="text-2xl font-extrabold text-blue-900 tracking-tight">DATA PORTFOLIO</div>
+                <div class="hidden md:flex space-x-8 font-medium">
+                    <a href="#home" class="hover:text-blue-600 transition">홈</a>
+                    <a href="#about" class="hover:text-blue-600 transition">소개</a>
+                    <a href="#skills" class="hover:text-blue-600 transition">기술 스택</a>
+                    <a href="#projects" class="hover:text-blue-600 transition">프로젝트</a>
+                    <a href="#contact" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">연락하기</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 gradient-bg text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center">
+            <div class="inline-block px-4 py-1.5 mb-6 border border-blue-300 rounded-full text-sm font-semibold bg-white/10">
+                경제학 전공 & 창업 데이터 분석가
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+                데이터로 시장을 읽고,<br><span class="text-blue-300">창업의 해답</span>을 제시합니다.
+            </h1>
+            <p class="text-lg md:text-xl text-blue-100 mb-10 max-w-2xl">
+                경제학적 통찰력과 정교한 데이터 분석 기법을 결합하여 비즈니스 가치를 창출합니다. 
+                시장의 흐름을 분석하고 지속 가능한 성장을 위한 지표를 설계합니다.
+            </p>
+            <div class="flex gap-4">
+                <a href="#projects" class="bg-white text-blue-900 px-8 py-3 rounded-xl font-bold hover:bg-blue-50 transition shadow-lg">프로젝트 보기</a>
+                <a href="#contact" class="border border-white/30 hover:bg-white/10 px-8 py-3 rounded-xl font-bold transition">문의하기</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <div class="aspect-square bg-gray-200 rounded-3xl overflow-hidden shadow-2xl">
+                        <!-- Profile Image Placeholder -->
+                        <div class="w-full h-full flex items-center justify-center bg-blue-50">
+                            <span class="text-blue-200 text-8xl font-bold">PROFILE</span>
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-gray-100">
+                        <div class="text-blue-600 font-bold text-3xl mb-1">3+</div>
+                        <div class="text-gray-500 text-sm">진행 프로젝트</div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-extrabold mb-6 text-gray-900">경제학적 통찰과 데이터의 결합</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        전통적인 경제 이론을 바탕으로 시장의 인센티브 구조를 이해하고, 현대적인 데이터 분석 툴(Python, SQL, R)을 통해 가설을 검증합니다. 
+                        특히 창업 도메인에서의 시장 진입 전략과 초기 지표 성장에 깊은 관심을 가지고 있습니다.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold">1</div>
+                            <span class="font-medium">거시/미시 경제 흐름 분석을 통한 시장 기회 포착</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold">2</div>
+                            <span class="font-medium">창업 초기 단계의 AARRR 지표 최적화 설계</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold">3</div>
+                            <span class="font-medium">머신러닝 기반의 수요 예측 및 고객 이탈 분석</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16">
+            <h2 class="text-3xl font-extrabold mb-4">기술 스택 & 역량</h2>
+            <p class="text-gray-500">데이터를 다루고 비즈니스를 이해하기 위해 사용하는 도구들입니다.</p>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Data Analysis -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover">
+                <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2h2a2 2 0 002-2zm0 0h5a2 2 0 002-2v-3a2 2 0 00-2-2h-5m0 0v-3a2 2 0 002-2h2a2 2 0 002 2v3" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">데이터 분석</h3>
+                <p class="text-gray-500 mb-4">Python(Pandas, Scikit-learn), SQL, R, 회귀분석, 가설 검정</p>
+                <div class="w-full bg-gray-100 h-2 rounded-full overflow-hidden">
+                    <div class="bg-blue-600 h-full" style="width: 90%"></div>
+                </div>
+            </div>
+            <!-- Business Intelligence -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover">
+                <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">비즈니스 인사이트</h3>
+                <p class="text-gray-500 mb-4">Tableau, GA4, 재무제표 분석, 비즈니스 모델 캔버스</p>
+                <div class="w-full bg-gray-100 h-2 rounded-full overflow-hidden">
+                    <div class="bg-purple-600 h-full" style="width: 85%"></div>
+                </div>
+            </div>
+            <!-- Domain Knowledge -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover">
+                <div class="w-12 h-12 bg-green-100 text-green-600 rounded-xl flex items-center justify-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">경제학 & 창업</h3>
+                <p class="text-gray-500 mb-4">계량경제학, 게임이론, 벤처 캐피털 실무 기초, 린 스타트업</p>
+                <div class="w-full bg-gray-100 h-2 rounded-full overflow-hidden">
+                    <div class="bg-green-600 h-full" style="width: 95%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Interaction Example -->
+    <section class="py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-blue-900 rounded-3xl p-8 md:p-12 text-white overflow-hidden relative">
+                <div class="md:flex items-center gap-12 relative z-10">
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <h2 class="text-3xl font-bold mb-6">Interactive Analysis</h2>
+                        <p class="text-blue-200 mb-6">가상 창업 클러스터의 데이터 분포를 시뮬레이션한 차트입니다. 데이터 기반의 의사결정 과정을 시각화하여 보여드립니다.</p>
+                        <button onclick="updateChart()" class="bg-white text-blue-900 px-6 py-2 rounded-full font-bold hover:bg-blue-50 transition">데이터 셔플링</button>
+                    </div>
+                    <div class="md:w-1/2 bg-white/10 backdrop-blur-sm p-4 rounded-2xl">
+                        <canvas id="myChart" class="w-full"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Section -->
+    <section id="projects" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-extrabold text-center mb-16 text-gray-900">대표 프로젝트</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 card-hover">
+                    <div class="h-48 bg-blue-100 flex items-center justify-center">
+                        <span class="text-blue-300 text-sm">Main Visualization</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-blue-600 font-semibold text-xs mb-2">창업 데이터 분석</div>
+                        <h3 class="text-xl font-bold mb-2">서울시 상권 생존율 분석</h3>
+                        <p class="text-gray-500 text-sm mb-4 leading-relaxed">계량경제 모델링을 사용하여 서울시 행정동별 신규 창업자의 3년 내 생존율을 예측하고 주요 위험 요인을 도출했습니다.</p>
+                        <div class="flex gap-2">
+                            <span class="bg-gray-100 px-2 py-1 rounded text-xs">Python</span>
+                            <span class="bg-gray-100 px-2 py-1 rounded text-xs">Logistic Regression</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 card-hover">
+                    <div class="h-48 bg-purple-100 flex items-center justify-center">
+                        <span class="text-purple-300 text-sm">SaaS Metric Dash</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-purple-600 font-semibold text-xs mb-2">비즈니스 인텔리전스</div>
+                        <h3 class="text-xl font-bold mb-2">SaaS 초기 스타트업 대시보드</h3>
+                        <p class="text-gray-500 text-sm mb-4 leading-relaxed">초기 SaaS 스타트업을 위한 MRR, LTV, CAC 대시보드를 구축하여 마케팅 채널 효율을 최적화했습니다.</p>
+                        <div class="flex gap-2">
+                            <span class="bg-gray-100 px-2 py-1 rounded text-xs">Tableau</span>
+                            <span class="bg-gray-100 px-2 py-1 rounded text-xs">SQL</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 card-hover">
+                    <div class="h-48 bg-green-100 flex items-center justify-center">
+                        <span class="text-green-300 text-sm">Economic Modeling</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-green-600 font-semibold text-xs mb-2">경제 논문 구현</div>
+                        <h3 class="text-xl font-bold mb-2">소비자 인센티브 반응 분석</h3>
+                        <p class="text-gray-500 text-sm mb-4 leading-relaxed">가격 변동에 따른 소비자 수요의 가격탄력성을 실증 분석하여 스타트업의 가격 책정 전략을 제안했습니다.</p>
+                        <div class="flex gap-2">
+                            <span class="bg-gray-100 px-2 py-1 rounded text-xs">R</span>
+                            <span class="bg-gray-100 px-2 py-1 rounded text-xs">Elasticity Analysis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="py-20 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-8">Let's build something insightful.</h2>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-12">
+                <a href="mailto:example@email.com" class="flex items-center gap-2 hover:text-blue-400 transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                    example@email.com
+                </a>
+                <a href="#" class="flex items-center gap-2 hover:text-blue-400 transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                    GitHub Portfolio
+                </a>
+            </div>
+            <div class="pt-8 border-t border-gray-800 text-gray-500 text-sm">
+                © 2025 Data Portfolio. All rights reserved. Created for Startup Data Analysts.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Chart.js implementation
+        let myChart;
+        const ctx = document.getElementById('myChart').getContext('2d');
+        
+        const initChart = () => {
+            const data = {
+                labels: ['Q1', 'Q2', 'Q3', 'Q4', 'Q5'],
+                datasets: [{
+                    label: '성장 지수',
+                    data: [12, 19, 15, 25, 32],
+                    borderColor: '#60a5fa',
+                    backgroundColor: 'rgba(96, 165, 250, 0.2)',
+                    tension: 0.4,
+                    fill: true,
+                    pointRadius: 6,
+                    pointBackgroundColor: '#fff'
+                }]
+            };
+
+            myChart = new Chart(ctx, {
+                type: 'line',
+                data: data,
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    scales: {
+                        y: {
+                            ticks: { color: 'rgba(255,255,255,0.7)' },
+                            grid: { color: 'rgba(255,255,255,0.1)' }
+                        },
+                        x: {
+                            ticks: { color: 'rgba(255,255,255,0.7)' },
+                            grid: { display: false }
+                        }
+                    }
+                }
+            });
+        };
+
+        const updateChart = () => {
+            const newData = Array.from({ length: 5 }, () => Math.floor(Math.random() * 50));
+            myChart.data.datasets[0].data = newData;
+            myChart.update();
+        };
+
+        window.onload = initChart;
+    </script>
+</body>
+</html>
